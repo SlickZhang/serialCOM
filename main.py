@@ -24,7 +24,7 @@ class SerialPlotter(QMainWindow):
         # 设置定时器，每隔一段时间更新数据
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_plot)
-        self.timer.start(2)  # 每100毫秒更新一次
+        self.timer.start(2)  # 每 2 毫秒更新一次
 
         # 初始化Matplotlib图形
         self.fig, self.ax = plt.subplots()
